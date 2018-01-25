@@ -1,28 +1,31 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <HelloWorld/>
+    <Topbar/>
+    <Station/>
+    <Footbar/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld'
+import Topbar from './components/Topbar'
+import Station from './components/Station'
+import Footbar from './components/Footbar'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Topbar,
+    Station,
+    Footbar
   }
 }
 </script>
 
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+<style lang="stylus">
+html
+  background-color black
+  text-align center
+
+body
+  margin 0
 </style>

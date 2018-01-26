@@ -4,8 +4,8 @@
     :controls-visible="true"
     :width="width"
     :height="height"
-    :autoplay="false"
-    :autoplay-timeout="10000"
+    :autoplay="true"
+    :autoplay-timeout="600000"
     @before-slide-change="onBeforeSlideChange"
     @after-slide-change="onAfterSlideChange">
     <slide class="station" v-for="(station, i) in stations" :key="station.name" :index="i">

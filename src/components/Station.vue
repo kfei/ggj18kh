@@ -71,6 +71,11 @@ export default {
         },
         {
           type: 'twitch',
+          channel: 'igda_taiwan',
+          name: 'Taipei (CLBC)'
+        },
+        {
+          type: 'twitch',
           channel: 'igda_japan',
           name: 'Japan'
         }

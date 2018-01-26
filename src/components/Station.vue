@@ -66,8 +66,8 @@ export default {
         },
         {
           type: 'twitch',
-          channel: 'melbggj',
-          name: 'Melbourne'
+          channel: 'kdugamedev',
+          name: 'Malaysia'
         },
         {
           type: 'twitch',
@@ -78,11 +78,11 @@ export default {
           type: 'twitch',
           channel: 'igda_japan',
           name: 'Japan'
+        },
+        {
+          type: 'jammers',
+          name: 'Jammers'
         }
-        // {
-        //   type: 'jammers',
-        //   name: 'Jammers'
-        // }
       ]
     }
   },

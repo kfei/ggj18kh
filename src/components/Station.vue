@@ -56,33 +56,28 @@ export default {
     return {
       stations: [
         {
-          type: 'twitch',
-          channel: 'nickmercs',
-          name: 'nickmercs'
-        },
-        {
-          type: 'twitch',
-          channel: 'dakotaz',
-          name: 'dakotaz'
-        },
-        {
-          type: 'twitch',
-          channel: 'two_lives_left',
-          name: 'Adelaide'
-        },
-        {
-          type: 'twitch',
-          channel: 'paximillian',
-          name: 'Israel'
-        },
-        {
           type: 'twitter',
           name: 'Twitter'
         },
         {
-          type: 'jammers',
-          name: 'Jammers'
+          type: 'twitch',
+          channel: 'dakuokh',
+          name: 'Kaohsiung'
+        },
+        {
+          type: 'twitch',
+          channel: 'melbggj',
+          name: 'Melbourne'
+        },
+        {
+          type: 'twitch',
+          channel: 'igda_japan',
+          name: 'Japan'
         }
+        // {
+        //   type: 'jammers',
+        //   name: 'Jammers'
+        // }
       ]
     }
   },

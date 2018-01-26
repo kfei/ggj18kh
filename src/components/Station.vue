@@ -67,13 +67,13 @@ export default {
         },
         {
           type: 'twitch',
-          channel: 'kingrichard',
-          name: 'kingrichard'
+          channel: 'two_lives_left',
+          name: 'Adelaide'
         },
         {
           type: 'twitch',
-          channel: 'katgunn',
-          name: 'katgunn'
+          channel: 'paximillian',
+          name: 'Israel'
         },
         {
           type: 'twitter',

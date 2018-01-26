@@ -26,7 +26,7 @@ export default {
       return {
         name: `😇-${i}`,
         picture: `http://i.pravatar.cc/60?u=${i}`,
-        active: i % 3 === 0
+        active: Math.floor(Math.random() * 10) % 3 === 0
       }
     })
   }
@@ -36,12 +36,10 @@ export default {
 <style lang="stylus">
 .jammers
   display flex
-  flex-direction row
-  column-count 5
   flex-wrap wrap
 
   .jammer
-    margin 3px
+    margin 10px
     display flex
     justify-content center
     width 60px
@@ -49,12 +47,16 @@ export default {
     font-size 2em
     border-radius 100%
 
-    &.active
-      border 3px solid #beff9d
-      box-shadow 0 0 15px #fff
     img
       border-radius 100%
       filter grayscale(100%)
+      opacity .6
+
+    &.active
+      border 3px solid #beff9d
+      box-shadow 0 0 15px #fff
+
     &.active img
       filter none
+      opacity 1
 </style>

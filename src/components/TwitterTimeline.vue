@@ -9,16 +9,26 @@ export default {
   ],
 
   mounted () {
-    /* global twttr */
-    twttr.ready((twttr) => {
-      twttr.widgets.createTimeline('956207397726388226', this.$refs.timeline, {
-        width: 800,
-        height: 600,
-        chrome: 'nofooter',
-        dnt: true,
-        linkColor: '#beff9d'
+    // Twitter has some issues about its widget height
+    setTimeout(function () {
+      /* global twttr */
+      twttr.ready((twttr) => {
+        twttr.widgets.createTimeline(
+          {
+            sourceType: 'widget',
+            widgetId: '956207397726388226'
+          },
+          this.$refs.timeline,
+          {
+            width: 800,
+            height: 600,
+            chrome: 'nofooter noborders',
+            dnt: true,
+            linkColor: '#beff9d'
+          }
+        )
       })
-    })
+    }.bind(this), 3000)
   }
 }
 </script>

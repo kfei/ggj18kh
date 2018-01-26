@@ -14,7 +14,7 @@ export default {
 
   mounted () {
     /* global Twitch */
-    let player = new Twitch.Player(`twitch-player-${this.station.name}`, {
+    let player = new Twitch.Player(`twitch-player-${this.station.channel}`, {
       width: this.width,
       height: this.height,
       layout: 'video',
